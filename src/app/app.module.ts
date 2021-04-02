@@ -9,6 +9,7 @@ import { HeaderContentComponent } from "./main-page/components/header-content/he
 import { AboutMeComponent } from "./main-page/components/about-me/about-me.component";
 import { ServicesComponent } from './main-page/components/services/services.component';
 import { EducationAndWorkComponent } from './main-page/components/education-and-work/education-and-work.component';
+import { TechsAndToolsComponent } from './main-page/components/techs-and-tools/techs-and-tools.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EducationAndWorkComponent } from './main-page/components/education-and-
     HeaderContentComponent,
     AboutMeComponent,
     ServicesComponent,
-    EducationAndWorkComponent
+    EducationAndWorkComponent,
+    TechsAndToolsComponent
   ],
   imports: [
     BrowserModule,
