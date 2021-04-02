@@ -5,6 +5,9 @@
   height: 100vh;
   position: relative;
   padding-top: 77px;
+  background-color: $color-white;
+  border-bottom: 1px solid #E8E8E8;
+  overflow: hidden;
 
   .top-left-blob {
     position: absolute;
@@ -13,18 +16,18 @@
   }
   .top-left-illustration {
     position: absolute;
-    top: 112px;
-    right: 46px;
+    top: 132px;
+    right: 62px;
   }
   .bottom-right-blob {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     right: 0;
   }
   .bottom-right-illustration {
     position: absolute;
-    bottom: 46px;
-    left: 46px;
+    bottom: 62px;
+    left: 62px;
 
     object {
       height: 260px;

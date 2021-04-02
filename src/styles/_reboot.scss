@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: $body-bg-color;
+}
+
 h1 { font-size: 72px; }
 h2 { font-size: 36px; }
 h3 { font-size: 24px; }
@@ -28,6 +32,7 @@ a {
 
 p {
   margin: 0;
+  font-size: 18px;
 }
 
 ul {
