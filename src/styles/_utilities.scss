@@ -8,3 +8,12 @@
 
 /* Line heights */
 .line-height-1 { line-height: 1 !important; }
+
+/* Header Texts */
+.header-texts {
+  margin-bottom: 4rem;
+
+  p {
+    max-width: 460px;
+  }
+}

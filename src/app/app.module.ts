@@ -8,6 +8,7 @@ import { NavbarComponent } from "./main-page/components/navbar/navbar.component"
 import { HeaderContentComponent } from "./main-page/components/header-content/header-content.component";
 import { AboutMeComponent } from "./main-page/components/about-me/about-me.component";
 import { ServicesComponent } from './main-page/components/services/services.component';
+import { EducationAndWorkComponent } from './main-page/components/education-and-work/education-and-work.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ServicesComponent } from './main-page/components/services/services.comp
     NavbarComponent,
     HeaderContentComponent,
     AboutMeComponent,
-    ServicesComponent
+    ServicesComponent,
+    EducationAndWorkComponent
   ],
   imports: [
     BrowserModule,

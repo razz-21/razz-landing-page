@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+
+.education-and-work-main-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #F6F6F6;
+
+  .education-and-work-container {
+    @include container-maxwidth();
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
+      margin-bottom: 5rem;
+
+      .education-grid-item {
+        object {
+          margin-bottom: 0.75rem;
+        }
+      }
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
+
+      .work-grid-item {
+        object {
+          margin-bottom: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+.detail-text {
+  color: #848484;
+  font-size: 1.135rem;
+  font-style: italic;
+}
