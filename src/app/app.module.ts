@@ -7,9 +7,10 @@ import { MainPageComponent } from "./main-page/main-page.component";
 import { NavbarComponent } from "./main-page/components/navbar/navbar.component";
 import { HeaderContentComponent } from "./main-page/components/header-content/header-content.component";
 import { AboutMeComponent } from "./main-page/components/about-me/about-me.component";
-import { ServicesComponent } from './main-page/components/services/services.component';
-import { EducationAndWorkComponent } from './main-page/components/education-and-work/education-and-work.component';
-import { TechsAndToolsComponent } from './main-page/components/techs-and-tools/techs-and-tools.component';
+import { ServicesComponent } from "./main-page/components/services/services.component";
+import { EducationAndWorkComponent } from "./main-page/components/education-and-work/education-and-work.component";
+import { TechsAndToolsComponent } from "./main-page/components/techs-and-tools/techs-and-tools.component";
+import { ProjectsComponent } from "./main-page/components/projects/projects.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TechsAndToolsComponent } from './main-page/components/techs-and-tools/t
     AboutMeComponent,
     ServicesComponent,
     EducationAndWorkComponent,
-    TechsAndToolsComponent
+    TechsAndToolsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
