@@ -2,10 +2,12 @@
 @import "mixins";
 
 .navbar {
-  position: relative;
+  position: fixed;
   height: auto;
   width: 100%;
+  background-color: $color-white;
   border-bottom: 1px solid #E9E4E4;
+  z-index: 2;
 
   .navs {
     @include container-maxwidth();

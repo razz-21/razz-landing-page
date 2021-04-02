@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+.header-content-container {
+  height: 100vh;
+  position: relative;
+  padding-top: 77px;
+
+  .top-left-blob {
+    position: absolute;
+    top: 78px;
+    left: 0;
+  }
+  .top-left-illustration {
+    position: absolute;
+    top: 112px;
+    right: 46px;
+  }
+  .bottom-right-blob {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .bottom-right-illustration {
+    position: absolute;
+    bottom: 46px;
+    left: 46px;
+
+    object {
+      height: 260px;
+    }
+  }
+
+  .header-main-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+    .male-avatar {
+      margin-bottom: 1rem;
+    }
+
+    .main-name {
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    .main-title {
+      margin-bottom: 1.5rem;
+      font-weight: 900;
+      text-align: center;
+      line-height: 1;
+      text-transform: uppercase;
+
+      span:first-child { color: $text-color-blue; }
+      span:last-child { color: $text-color-yellow; }
+    }
+
+    .services-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .service-list-item {
+        font-size: 20px;
+      }
+      .service-list-item:nth-child(2),
+      .service-list-item:nth-child(4) {
+        margin: 0 1.5rem;
+      }
+    }
+
+    .btn-primary {
+      margin: 3rem 0;
+    }
+
+    .arrow-down {
+      margin: 3rem 0;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
