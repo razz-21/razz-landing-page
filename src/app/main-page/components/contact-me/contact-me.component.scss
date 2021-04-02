@@ -2,10 +2,12 @@
 @import "mixins";
 
 .contact-me-main-container {
+  position: relative;
   padding-top: 3rem;
   padding-bottom: 3rem;
   border-radius: 0px 0px 0px 120px;
   background: linear-gradient(269.98deg, #3D3FE0 1.73%, #9231E7 99.98%);
+  z-index: 2;
 
   .contact-me-container {
     @include container-maxwidth();
