@@ -4,8 +4,8 @@
 .projects-container {
   @include container-maxwidth();
 
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
 
   .projects-grid {
     display: grid;

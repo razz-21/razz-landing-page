@@ -11,6 +11,7 @@ import { ServicesComponent } from "./main-page/components/services/services.comp
 import { EducationAndWorkComponent } from "./main-page/components/education-and-work/education-and-work.component";
 import { TechsAndToolsComponent } from "./main-page/components/techs-and-tools/techs-and-tools.component";
 import { ProjectsComponent } from "./main-page/components/projects/projects.component";
+import { ContactMeComponent } from "./main-page/components/contact-me/contact-me.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectsComponent } from "./main-page/components/projects/projects.comp
     ServicesComponent,
     EducationAndWorkComponent,
     TechsAndToolsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
