@@ -14,24 +14,24 @@
       </svg>
     </div>
     <ul class="nav-items">
-      <li class="nav-item active">
-        <a href="#">Home</a>
+      <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section1' }" (click)="scrollTo('section1')">
+        <a>Home</a>
         <div class="active-dot"></div>
       </li>
-      <li class="nav-item">
-        <a href="#">About Me</a>
+      <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section2' }" (click)="scrollTo('section2')">
+        <a>About Me</a>
         <div class="active-dot"></div>
       </li>
-      <li class="nav-item">
-        <a href="#">Techs & Tools</a>
+      <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section3' }" (click)="scrollTo('section3')">
+        <a>Techs & Tools</a>
         <div class="active-dot"></div>
       </li>
-      <li class="nav-item">
-        <a href="#">Projects</a>
+      <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section4' }" (click)="scrollTo('section4')">
+        <a>Projects</a>
         <div class="active-dot"></div>
       </li>
-      <li class="nav-item">
-        <a href="#">Contact Me</a>
+      <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section5' }" (click)="scrollTo('section5')">
+        <a>Contact Me</a>
         <div class="active-dot"></div>
       </li>
     </ul>
@@ -51,24 +51,24 @@
       </svg>
     </div>
     <ul class="sidebar-items">
-      <li class="sidebar-item active">
-        <a href="#">Home</a>
+      <li class="sidebar-item" [ngClass]="{ 'active': currentSection === 'section1' }" (click)="scrollToMobile('section1')">
+        <a>Home</a>
         <div class="active-dot"></div>
       </li>
-      <li class="sidebar-item">
-        <a href="#">About Me</a>
+      <li class="sidebar-item" [ngClass]="{ 'active': currentSection === 'section2' }" (click)="scrollToMobile('section2')">
+        <a>About Me</a>
         <div class="active-dot"></div>
       </li>
-      <li class="sidebar-item">
-        <a href="#">Techs & Tools</a>
+      <li class="sidebar-item" [ngClass]="{ 'active': currentSection === 'section3' }" (click)="scrollToMobile('section3')">
+        <a>Techs & Tools</a>
         <div class="active-dot"></div>
       </li>
-      <li class="sidebar-item">
-        <a href="#">Projects</a>
+      <li class="sidebar-item" [ngClass]="{ 'active': currentSection === 'section4' }" (click)="scrollToMobile('section4')">
+        <a>Projects</a>
         <div class="active-dot"></div>
       </li>
-      <li class="sidebar-item">
-        <a href="#">Contact Me</a>
+      <li class="sidebar-item" [ngClass]="{ 'active': currentSection === 'section5' }" (click)="scrollToMobile('section5')">
+        <a>Contact Me</a>
         <div class="active-dot"></div>
       </li>
     </ul>

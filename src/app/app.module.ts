@@ -12,7 +12,8 @@ import { EducationAndWorkComponent } from "./main-page/components/education-and-
 import { TechsAndToolsComponent } from "./main-page/components/techs-and-tools/techs-and-tools.component";
 import { ProjectsComponent } from "./main-page/components/projects/projects.component";
 import { ContactMeComponent } from "./main-page/components/contact-me/contact-me.component";
-import { FooterComponent } from './main-page/components/footer/footer.component';
+import { FooterComponent } from "./main-page/components/footer/footer.component";
+import { ScrollspyDirective } from "./shared/directives/scrollspy.directive";
 
 @NgModule({
   declarations: [
@@ -26,13 +27,13 @@ import { FooterComponent } from './main-page/components/footer/footer.component'
     TechsAndToolsComponent,
     ProjectsComponent,
     ContactMeComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollspyDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

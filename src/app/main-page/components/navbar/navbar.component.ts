@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } from "@angular/core";
+import { AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from "@angular/core";
 
 @Component({
   selector: "app-navbar",
@@ -8,18 +8,43 @@ import { AfterViewInit, Component, ElementRef, OnInit, Renderer2, ViewChild } fr
 export class NavbarComponent implements OnInit, AfterViewInit {
 
   @ViewChild("navSideBar") navSideBar!: ElementRef;
+  @Input() currentSection: string;
 
   navSideBarEl!: HTMLElement;
 
   constructor(
     private renderer: Renderer2
-  ) { }
+  ) {
+    this.currentSection = "section1";
+  }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
     this.navSideBarEl = this.navSideBar.nativeElement;
+  }
+
+  scrollTo(section: string): void {
+    const scrollHeight = document.querySelector("#" + section)?.getBoundingClientRect().top || 0;
+    scrollBy(
+      {
+        top: scrollHeight - 76,
+        behavior: "smooth"
+      }
+    );
+  }
+
+  scrollToMobile(section: string): void {
+    const scrollHeight = document.querySelector("#" + section)?.getBoundingClientRect().top || 0;
+    scrollBy(
+      {
+        top: scrollHeight - 76,
+        behavior: "smooth"
+      }
+    );
+
+    this.toggleSidebar();
   }
 
   toggleSidebar(): void {
@@ -30,7 +55,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
       this.renderer.setStyle(document.body, "overflow", "hidden");
     } else {
       this.renderer.removeClass(this.navSideBarEl, "active");
-      this.renderer.setStyle(document.body, "overflow", "auto")
+      this.renderer.setStyle(document.body, "overflow", "auto");
     }
   }
 

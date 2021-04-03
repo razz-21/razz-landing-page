@@ -7,9 +7,17 @@ import { Component, OnInit } from "@angular/core";
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  currentSection: string;
+
+  constructor() {
+    this.currentSection = "section1";
+  }
 
   ngOnInit(): void {
+  }
+
+  onSectionChange(section: string): void {
+    this.currentSection = section;
   }
 
 }

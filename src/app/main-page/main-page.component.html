@@ -1,11 +1,23 @@
 <div class="main-container">
-  <app-navbar></app-navbar>
-  <app-header-content></app-header-content>
-  <app-about-me></app-about-me>
-  <app-services></app-services>
-  <app-education-and-work></app-education-and-work>
-  <app-techs-and-tools></app-techs-and-tools>
-  <app-projects></app-projects>
-  <app-contact-me></app-contact-me>
+  <app-navbar [currentSection]="currentSection"></app-navbar>
+  <div appScrollspy [spiedTags]="['DIV']" class="scrollspy" id="parentScrollspy" (sectionChange)="onSectionChange($event)">
+    <div id="section1">
+      <app-header-content></app-header-content>
+    </div>
+    <div id="section2">
+      <app-about-me></app-about-me>
+      <app-services></app-services>
+      <app-education-and-work></app-education-and-work>
+    </div>
+    <div id="section3">
+      <app-techs-and-tools></app-techs-and-tools>
+    </div>
+    <div id="section4">
+      <app-projects></app-projects>
+    </div>
+    <div id="section5">
+      <app-contact-me></app-contact-me>
+    </div>
+  </div>
   <app-footer></app-footer>
 </div>
