@@ -25,9 +25,13 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   toggleSidebar(): void {
     const isActive = this.navSideBarEl.classList.contains("active");
 
-    !isActive
-      ? this.renderer.addClass(this.navSideBarEl, "active")
-      : this.renderer.removeClass(this.navSideBarEl, "active");
+    if (!isActive) {
+      this.renderer.addClass(this.navSideBarEl, "active");
+      this.renderer.setStyle(document.body, "overflow", "hidden");
+    } else {
+      this.renderer.removeClass(this.navSideBarEl, "active");
+      this.renderer.setStyle(document.body, "overflow", "auto")
+    }
   }
 
 }
