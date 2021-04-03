@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .techs-and-tools-container {
   @include container-maxwidth();
@@ -42,5 +43,17 @@
       grid-row: 2;
     }
 
+  }
+}
+
+@include media-breakpoint-max(md) {
+  .techs-and-tools-container {
+    .techs-grid {
+      .techs-grid-item {
+        object {
+          height: 78px;
+        }
+      }
+    }
   }
 }

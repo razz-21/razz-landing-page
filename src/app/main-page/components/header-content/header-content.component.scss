@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .header-content-container {
   height: 100vh;
@@ -14,7 +15,7 @@
     top: 78px;
     left: 0;
   }
-  .top-left-illustration {
+  .top-right-illustration {
     position: absolute;
     top: 132px;
     right: 62px;
@@ -24,7 +25,7 @@
     bottom: -4px;
     right: 0;
   }
-  .bottom-right-illustration {
+  .bottom-left-illustration {
     position: absolute;
     bottom: 62px;
     left: 62px;
@@ -88,4 +89,35 @@
     }
   }
 
+}
+
+@include media-breakpoint-max(md) {
+  .header-content-container {
+    .top-left-blob {
+      object {
+        height: 200px;
+      }
+    }
+    .top-right-illustration {
+      top: 108px;
+      right: 26px;
+
+      object {
+        height: 160px;
+      }
+    }
+    .bottom-right-blob {
+      object {
+        height: 200px;
+      }
+    }
+    .bottom-left-illustration {
+      bottom: 26px;
+      left: 26px;
+
+      object {
+        height: 216px;
+      }
+    }
+  }
 }

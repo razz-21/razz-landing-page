@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .about-me-container {
   @include container-maxwidth();
@@ -11,12 +12,25 @@
 
   .me-picture {
     flex-basis: 440px;
+    margin-right: 2rem;
   }
   .me-about {
     flex-basis: 900px;
 
     h2 {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-max(md) {
+  .about-me-container {
+    .me-picture {
+      flex-basis: auto;
+
+      object {
+        height: 260px;
+      }
     }
   }
 }

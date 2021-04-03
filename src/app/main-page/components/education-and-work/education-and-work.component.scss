@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .education-and-work-main-container {
   padding-top: 4rem;
@@ -42,4 +43,18 @@
   color: #848484;
   font-size: 1.135rem;
   font-style: italic;
+}
+
+@include media-breakpoint-max(md) {
+  .education-and-work-main-container {
+    .education-and-work-container {
+      .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }
