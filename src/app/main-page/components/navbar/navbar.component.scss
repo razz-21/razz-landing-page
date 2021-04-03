@@ -71,7 +71,92 @@
       display: none;
     }
   }
+}
 
+.nav-sidebar-m {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  background: linear-gradient(200.69deg, #9948E0 0.51%, #3D3FE0 100.81%);
+  z-index: 999;
+
+  transition: ease-in-out 300ms;
+
+  &.active {
+    left: 0;
+    transition: ease-in-out 300ms;
+  }
+
+  .nav-sidebar-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+
+    .sidebar-hamburger {
+      margin-bottom: 3rem;
+
+      svg {
+        height: 36px;
+        width: 36px;
+        cursor: pointer;
+      }
+    }
+
+    .sidebar-items {
+      text-align: right;
+
+      .sidebar-item {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          font-weight: 200;
+          font-size: 28px;
+          color: $color-white;
+        }
+
+        &.active {
+          a {
+            font-weight: 700;
+          }
+
+          .active-dot {
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+
+        .active-dot {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 12px;
+            right: -24px;
+            height: 8px;
+            width: 8px;
+            opacity: 0;
+            background-color: $color-white;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    .sidebar-bottom-logo {
+      margin-top: auto;
+    }
+  }
 }
 
 @include media-breakpoint-max(sm) {

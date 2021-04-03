@@ -36,9 +36,48 @@
       </li>
     </ul>
     <div class="nav-menu-m">
-      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg (click)="toggleSidebar()" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1818 3.74899H3.81818C2.81403 3.74899 2 4.64442 2 5.74899V7.74899C2 8.85356 2.81403 9.74899 3.81818 9.74899H20.1818C21.186 9.74899 22 8.85356 22 7.74899V5.74899C22 4.64442 21.186 3.74899 20.1818 3.74899ZM3.81818 11.749H20.1818C21.186 11.749 22 12.6444 22 13.749V15.749C22 16.8536 21.186 17.749 20.1818 17.749H3.81818C2.81403 17.749 2 16.8536 2 15.749V13.749C2 12.6444 2.81403 11.749 3.81818 11.749ZM4 13.749V15.749H20V13.749H4ZM4 5.749V7.749H20V5.749H4ZM14 19.749H2V21.749H14V19.749Z" fill="black"/>
       </svg>
     </div>
   </div>
 </nav>
+
+<div #navSideBar class="nav-sidebar-m">
+  <div class="nav-sidebar-container">
+    <div class="sidebar-hamburger">
+      <svg (click)="toggleSidebar()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.81818 21L20.1818 21C21.186 21 22 20.1046 22 19L22 17C22 15.8954 21.186 15 20.1818 15L3.81818 15C2.81403 15 2 15.8954 2 17L2 19C2 20.1046 2.81403 21 3.81818 21ZM20.1818 13L3.81818 13C2.81403 13 2 12.1046 2 11L2 9C2 7.89543 2.81403 7 3.81818 7L20.1818 7C21.186 7 22 7.89543 22 9L22 11C22 12.1046 21.186 13 20.1818 13ZM20 11L20 9L4 9L4 11L20 11ZM20 19L20 17L4 17L4 19L20 19ZM10 5L22 5L22 3L10 3L10 5Z" fill="white"/>
+      </svg>
+    </div>
+    <ul class="sidebar-items">
+      <li class="sidebar-item active">
+        <a href="#">Home</a>
+        <div class="active-dot"></div>
+      </li>
+      <li class="sidebar-item">
+        <a href="#">About Me</a>
+        <div class="active-dot"></div>
+      </li>
+      <li class="sidebar-item">
+        <a href="#">Techs & Tools</a>
+        <div class="active-dot"></div>
+      </li>
+      <li class="sidebar-item">
+        <a href="#">Projects</a>
+        <div class="active-dot"></div>
+      </li>
+      <li class="sidebar-item">
+        <a href="#">Contact Me</a>
+        <div class="active-dot"></div>
+      </li>
+    </ul>
+    <div class="sidebar-bottom-logo">
+      <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.5 49C38.031 49 49 38.031 49 24.5C49 10.969 38.031 0 24.5 0C10.969 0 0 10.969 0 24.5C0 38.031 10.969 49 24.5 49Z" fill="white"/>
+        <path d="M34.2624 38.3833H28.0868L25.2317 31.0284C24.9007 30.2009 24.1249 29.7871 22.9042 29.7871H20.794V38.3833H15.0528V16.2876H25.3248C27.9937 16.2876 30.0005 16.8669 31.3453 18.0255C32.6901 19.1633 33.3625 20.7978 33.3625 22.9287C33.3625 24.4183 32.959 25.7114 32.1522 26.8079C31.366 27.8837 30.2488 28.6492 28.8006 29.1044C29.4212 29.2285 29.9798 29.5182 30.4764 29.9733C30.9729 30.4284 31.366 31.0388 31.6556 31.8043L34.2624 38.3833ZM24.3938 25.4424C25.6352 25.4424 26.5351 25.2562 27.0937 24.8838C27.6523 24.4908 27.9316 23.8908 27.9316 23.0839C27.9316 22.2356 27.6523 21.6253 27.0937 21.2529C26.5558 20.8805 25.6558 20.6943 24.3938 20.6943H20.7319V25.4424H24.3938Z" fill="black"/>
+        <path d="M26.95 10.2084C26.95 11.787 25.6703 13.0668 24.0917 13.0668C22.5131 13.0668 21.2333 11.787 21.2333 10.2084C21.2333 8.62981 22.5131 7.3501 24.0917 7.3501C25.6703 7.3501 26.95 8.62981 26.95 10.2084Z" fill="black"/>
+      </svg>
+    </div>
+  </div>
+</div>
