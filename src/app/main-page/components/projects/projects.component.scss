@@ -108,3 +108,24 @@
     }
   }
 }
+
+@include media-breakpoint-max(xs) {
+  .projects-container {
+    .projects-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      .projects-grid-item {
+        &:nth-child(1) {
+          grid-column: span 1;
+        }
+        &:nth-child(2) {
+          grid-column: span 1;
+        }
+        &:nth-child(3) {
+          grid-column: span 1;
+          grid-row: auto;
+        }
+      }
+    }
+  }
+}

@@ -61,6 +61,9 @@
 @include media-breakpoint-max(sm) {
   .techs-and-tools-container {
     .techs-grid {
+      column-gap: 0.5rem;
+      row-gap: 0.5rem;
+
       .techs-grid-item {
         object {
           height: 78px;
@@ -70,7 +73,7 @@
           grid-column: span 3;
         }
         &:nth-child(5) {
-          grid-column: 3 / 5;
+          grid-column: 2 / 6;
           grid-row: 2;
         }
         &:nth-child(6) {
@@ -96,6 +99,21 @@
         &:nth-child(11) {
           grid-column: 10 / 13;
           grid-row: 3;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-max(xs) {
+  .techs-and-tools-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .techs-grid {
+      .techs-grid-item {
+        object {
+          height: 56px;
         }
       }
     }

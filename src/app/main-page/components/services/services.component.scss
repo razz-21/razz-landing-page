@@ -154,3 +154,17 @@
     }
   }
 }
+
+@include media-breakpoint-max(xs) {
+  .services-container {
+    .services-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      .services-grid-item {
+        &:nth-child(-1n + 3) {
+          grid-column: span 1;
+        }
+      }
+    }
+  }
+}

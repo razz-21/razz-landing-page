@@ -43,6 +43,7 @@
 
     .me-picture {
       margin-bottom: 2rem;
+      margin-right: 0;
     }
 
     .me-about {
@@ -50,6 +51,19 @@
 
       h2 {
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-max(xs) {
+  .about-me-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .me-picture {
+      object {
+        height: 200px;
       }
     }
   }

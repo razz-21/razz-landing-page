@@ -193,3 +193,34 @@
     }
   }
 }
+
+@include media-breakpoint-max(xs) {
+  .header-content-container {
+    height: 736px;
+
+    .top-left-blob {
+      object {
+        height: 120px;
+      }
+    }
+    .top-right-illustration {
+      display: none;
+    }
+    .bottom-right-blob {
+      object {
+        height: 120px;
+      }
+    }
+    .bottom-left-illustration {
+      display: none;
+    }
+
+    .header-main-texts {
+      .services-list {
+        .service-list-item {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

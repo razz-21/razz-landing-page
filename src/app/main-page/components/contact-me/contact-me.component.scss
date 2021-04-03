@@ -82,6 +82,20 @@
   .contact-me-main-container {
     .contact-me-container {
       .contact-me-columns {
+        .contact-illustration {
+          object {
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-max(xs) {
+  .contact-me-main-container {
+    .contact-me-container {
+      .contact-me-columns {
         justify-content: center;
         flex-direction: column;
 
@@ -103,7 +117,7 @@
 
         .contact-illustration {
           object {
-            height: 220px;
+            height: 160px;
           }
         }
       }
