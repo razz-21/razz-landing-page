@@ -11,9 +11,17 @@
 
 /* Header Texts */
 .header-texts {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
   p {
     max-width: 460px;
+  }
+}
+
+@include media-breakpoint-max(sm) {
+  .header-texts {
+    p {
+      max-width: 420px;
+    }
   }
 }
