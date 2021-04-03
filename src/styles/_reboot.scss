@@ -61,3 +61,12 @@ textarea
     font-size: 1rem;
   }
 }
+
+@include media-breakpoint-max(sm) {
+  h1 { font-size: 56px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; }
+  h5 { font-size: 16px; }
+  h6 { font-size: 12px; }
+}

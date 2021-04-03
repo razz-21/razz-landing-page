@@ -58,3 +58,17 @@
     }
   }
 }
+
+@include media-breakpoint-max(sm) {
+  .education-and-work-main-container {
+    .education-and-work-container {
+      .education-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

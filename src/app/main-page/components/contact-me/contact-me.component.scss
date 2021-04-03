@@ -77,3 +77,36 @@
     }
   }
 }
+
+@include media-breakpoint-max(sm) {
+  .contact-me-main-container {
+    .contact-me-container {
+      .contact-me-columns {
+        justify-content: center;
+        flex-direction: column;
+
+        .contact-details {
+          justify-content: center;
+          margin-bottom: 2rem;
+
+          .detail-item {
+            text-align: center;
+
+            object {
+              height: 32px;
+            }
+            .detail-item-text {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .contact-illustration {
+          object {
+            height: 220px;
+          }
+        }
+      }
+    }
+  }
+}

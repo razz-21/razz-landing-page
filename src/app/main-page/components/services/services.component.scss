@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .services-container {
   @include container-maxwidth();
@@ -26,6 +27,9 @@
 
       svg {
         margin-bottom: 0.5rem;
+      }
+      h5 {
+        text-align: center;
       }
 
       .line {
@@ -128,6 +132,23 @@
 
         .line {
           background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-max(sm) {
+  .services-container {
+    .services-grid {
+      grid-template-columns: repeat(4, 1fr);
+
+      .services-grid-item {
+        &:nth-child(-1n + 2) {
+          grid-column: span 2;
+        }
+        &:last-child {
+          grid-column: 2 / 4;
         }
       }
     }

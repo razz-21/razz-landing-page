@@ -34,3 +34,24 @@
     }
   }
 }
+
+@include media-breakpoint-max(sm) {
+  .about-me-container {
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .me-picture {
+      margin-bottom: 2rem;
+    }
+
+    .me-about {
+      flex-basis: auto;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+

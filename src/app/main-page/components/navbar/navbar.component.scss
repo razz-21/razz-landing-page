@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 .navbar {
   position: fixed;
@@ -65,6 +66,30 @@
         }
       }
     }
+
+    .nav-menu-m {
+      display: none;
+    }
   }
 
+}
+
+@include media-breakpoint-max(sm) {
+  .navbar {
+    .navs {
+      .nav-items {
+        display: none;
+      }
+
+      .nav-menu-m {
+        display: block;
+
+        svg {
+          height: 36px;
+          width: 36px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
