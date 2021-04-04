@@ -24,6 +24,16 @@
   }
 }
 
+@include media-breakpoint-max(sm) {
+  .footer {
+    .footer-container {
+      .footer-details {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-max(xs) {
   .footer {
     padding-top: 10rem;

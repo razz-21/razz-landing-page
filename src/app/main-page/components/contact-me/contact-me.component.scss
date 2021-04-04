@@ -89,12 +89,10 @@
         }
 
         .contact-details {
-          justify-content: center;
+          justify-content: flex-end;
           margin-bottom: 2rem;
 
           .detail-item {
-            text-align: center;
-
             object {
               height: 28px;
             }
@@ -114,6 +112,12 @@
       .contact-me-columns {
         justify-content: center;
         flex-direction: column;
+
+        .contact-details {
+          .detail-item {
+            text-align: center;
+          }
+        }
 
         .contact-illustration {
           object {
