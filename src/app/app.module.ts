@@ -14,6 +14,7 @@ import { ProjectsComponent } from "./main-page/components/projects/projects.comp
 import { ContactMeComponent } from "./main-page/components/contact-me/contact-me.component";
 import { FooterComponent } from "./main-page/components/footer/footer.component";
 import { ScrollspyDirective } from "./shared/directives/scrollspy.directive";
+import { BackToTopComponent } from './shared/components/back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ScrollspyDirective } from "./shared/directives/scrollspy.directive";
     ProjectsComponent,
     ContactMeComponent,
     FooterComponent,
-    ScrollspyDirective
+    ScrollspyDirective,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

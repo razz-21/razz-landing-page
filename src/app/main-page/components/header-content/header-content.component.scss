@@ -90,6 +90,12 @@
 
       svg {
         cursor: pointer;
+        transition: ease 300ms;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: ease 300ms;
+        }
       }
     }
   }

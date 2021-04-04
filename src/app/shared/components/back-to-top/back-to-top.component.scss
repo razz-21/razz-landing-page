@@ -1,0 +1,74 @@
+@import "variables";
+@import "mixins";
+
+#scroll-btn {
+  background-color: $tertiary-color;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 2.7rem;
+  height: 2.65rem;
+  z-index: 3;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  transition: box-shadow .3s;
+  cursor: pointer;
+
+  svg {
+    width: 1rem;
+    transition: transform .3s;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px -2px $tertiary-color;
+
+    svg {
+      transform: translateY(-0.1875rem);
+    }
+  }
+}
+
+.scrollBtnEnter {
+  animation-name: scrollBtnEnter;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+}
+
+.scrollBtnExit {
+  animation-name: scrollBtnExit;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes scrollBtnEnter {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 1.5rem;
+  }
+}
+
+@keyframes scrollBtnExit {
+  0% {
+    opacity: 1;
+    bottom: 1.5rem;
+  }
+  100% {
+    opacity: 0;
+    bottom: -3rem;
+  }
+}

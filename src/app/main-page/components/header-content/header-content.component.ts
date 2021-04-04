@@ -12,4 +12,14 @@ export class HeaderContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToAbout(): void {
+    const scrollHeight = document.querySelector("#section2")?.getBoundingClientRect().top || 0;
+    scrollBy(
+      {
+        top: scrollHeight - 76,
+        behavior: "smooth"
+      }
+    );
+  }
+
 }
