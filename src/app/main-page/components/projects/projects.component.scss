@@ -69,17 +69,17 @@
       }
     }
 
-    .projects-grid-item:nth-child(1) .image-tile {
+    div:nth-child(1) .projects-grid-item .image-tile {
       .image-overlay {
         background-color: rgba(153, 72, 224, 0.9);
       }
     }
-    .projects-grid-item:nth-child(2) .image-tile {
+    div:nth-child(2) .projects-grid-item .image-tile {
       .image-overlay {
         background-color: rgba(0, 191, 255, 0.9);;
       }
     }
-    .projects-grid-item:nth-child(3) .image-tile {
+    div:nth-child(3) .projects-grid-item .image-tile {
       .image-overlay {
         background-color: rgba(49, 211, 92, 0.9);
       }

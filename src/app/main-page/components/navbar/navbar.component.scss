@@ -84,10 +84,15 @@
   background: linear-gradient(200.69deg, #9948E0 0.51%, #3D3FE0 100.81%);
   z-index: 999;
 
-  transition: ease-in-out 300ms;
-
   &.active {
     left: 0;
+  }
+  &.sliding-right {
+    left: 0;
+    transition: ease-in-out 300ms;
+  }
+  &.sliding-left {
+    left: -100vh;
     transition: ease-in-out 300ms;
   }
 

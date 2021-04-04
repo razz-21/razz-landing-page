@@ -19,6 +19,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100%;
       padding: 2rem;
       background: #FBFBFB;
       box-shadow: 4px 4px 31px -6px rgba(0, 0, 0, 0.15);
@@ -41,98 +42,98 @@
       &:hover {
         transform: translateY(-16px);
       }
+    }
 
-      &:nth-child(1) {
-        &:hover {
-          background-color: $tertiary-color;
-          color: $color-white;
-          box-shadow: 4px 4px 31px -6px $tertiary-color;
-          transition: ease 500ms;
+    div:nth-child(1) .services-grid-item {
+      &:hover {
+        background-color: $tertiary-color;
+        color: $color-white;
+        box-shadow: 4px 4px 31px -6px $tertiary-color;
+        transition: ease 500ms;
 
-          svg {
-            path {
-              fill: $color-white;
-              transition: ease 500ms;
-            }
-          }
-
-          .line {
-            background-color: $color-white;
+        svg {
+          path {
+            fill: $color-white;
             transition: ease 500ms;
           }
         }
 
-        svg {
-          path {
-            fill: $tertiary-color;
-          }
-        }
-
         .line {
-          background-color: $tertiary-color;
+          background-color: $color-white;
+          transition: ease 500ms;
         }
       }
 
-      &:nth-child(2) {
-        &:hover {
-          background-color: $primary-color;
-          color: $color-white;
-          box-shadow: 4px 4px 31px -6px $primary-color;
-          transition: ease 500ms;
-
-          svg {
-            path {
-              fill: $color-white;
-              transition: ease 500ms;
-            }
-          }
-
-          .line {
-            background-color: $color-white;
-            transition: ease 500ms;
-          }
-        }
-
-        svg {
-          path {
-            fill: $primary-color;
-          }
-        }
-
-        .line {
-          background-color: $primary-color;
+      svg {
+        path {
+          fill: $tertiary-color;
         }
       }
 
-      &:nth-child(3) {
-        &:hover {
-          background-color: $secondary-color;
-          color: $color-white;
-          box-shadow: 4px 4px 31px -6px $secondary-color;
-          transition: ease 500ms;
+      .line {
+        background-color: $tertiary-color;
+      }
+    }
 
-          svg {
-            path {
-              fill: $color-white;
-              transition: ease 500ms;
-            }
-          }
+    div:nth-child(2) .services-grid-item {
+      &:hover {
+        background-color: $primary-color;
+        color: $color-white;
+        box-shadow: 4px 4px 31px -6px $primary-color;
+        transition: ease 500ms;
 
-          .line {
-            background-color: $color-white;
+        svg {
+          path {
+            fill: $color-white;
             transition: ease 500ms;
           }
         }
 
+        .line {
+          background-color: $color-white;
+          transition: ease 500ms;
+        }
+      }
+
+      svg {
+        path {
+          fill: $primary-color;
+        }
+      }
+
+      .line {
+        background-color: $primary-color;
+      }
+    }
+
+    div:nth-child(3) .services-grid-item {
+      &:hover {
+        background-color: $secondary-color;
+        color: $color-white;
+        box-shadow: 4px 4px 31px -6px $secondary-color;
+        transition: ease 500ms;
+
         svg {
           path {
-            fill: $secondary-color;
+            fill: $color-white;
+            transition: ease 500ms;
           }
         }
 
         .line {
-          background-color: $secondary-color;
+          background-color: $color-white;
+          transition: ease 500ms;
         }
+      }
+
+      svg {
+        path {
+          fill: $secondary-color;
+        }
+      }
+
+      .line {
+        background-color: $secondary-color;
       }
     }
   }
