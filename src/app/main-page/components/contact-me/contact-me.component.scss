@@ -87,6 +87,22 @@
             height: 160px;
           }
         }
+
+        .contact-details {
+          justify-content: center;
+          margin-bottom: 2rem;
+
+          .detail-item {
+            text-align: center;
+
+            object {
+              height: 28px;
+            }
+            .detail-item-text {
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }
@@ -98,22 +114,6 @@
       .contact-me-columns {
         justify-content: center;
         flex-direction: column;
-
-        .contact-details {
-          justify-content: center;
-          margin-bottom: 2rem;
-
-          .detail-item {
-            text-align: center;
-
-            object {
-              height: 32px;
-            }
-            .detail-item-text {
-              font-size: 20px;
-            }
-          }
-        }
 
         .contact-illustration {
           object {

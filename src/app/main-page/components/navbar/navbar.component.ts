@@ -39,7 +39,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
     const scrollHeight = document.querySelector("#" + section)?.getBoundingClientRect().top || 0;
     scrollBy(
       {
-        top: scrollHeight - 76,
+        top: scrollHeight - 52,
         behavior: "smooth"
       }
     );
