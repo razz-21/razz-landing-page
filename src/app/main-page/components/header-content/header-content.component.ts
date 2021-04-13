@@ -22,4 +22,14 @@ export class HeaderContentComponent implements OnInit {
     );
   }
 
+  downloadCV(): void {
+    const link = document.createElement("a");
+    link.setAttribute("type", "hidden");
+    link.href = "../../../../assets/Ernesto Razo - CV.pdf";
+    link.download = "Ernesto Razo - CV";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+
 }
