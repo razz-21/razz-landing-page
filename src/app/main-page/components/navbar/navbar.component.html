@@ -1,4 +1,6 @@
-<nav class="navbar" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+
+<div class="navbar-container">
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
   <div class="navs">
     <div class="nav-logo">
       <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,23 +18,23 @@
     <ul class="nav-items">
       <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section1' }" (click)="scrollTo('section1')">
         <a>Home</a>
-        <div class="active-dot"></div>
+        <!-- <div class="active-dot"></div> -->
       </li>
       <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section2' }" (click)="scrollTo('section2')">
         <a>About Me</a>
-        <div class="active-dot"></div>
+        <!-- <div class="active-dot"></div> -->
       </li>
       <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section3' }" (click)="scrollTo('section3')">
         <a>Technologies & Tools</a>
-        <div class="active-dot"></div>
+        <!-- <div class="active-dot"></div> -->
       </li>
       <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section4' }" (click)="scrollTo('section4')">
         <a>Projects</a>
-        <div class="active-dot"></div>
+        <!-- <div class="active-dot"></div> -->
       </li>
       <li class="nav-item" [ngClass]="{ 'active': currentSection === 'section5' }" (click)="scrollTo('section5')">
         <a>Contact Me</a>
-        <div class="active-dot"></div>
+        <!-- <div class="active-dot"></div> -->
       </li>
     </ul>
     <div class="nav-menu-m">
@@ -42,6 +44,7 @@
     </div>
   </div>
 </nav>
+</div>
 
 <div #navSideBar class="nav-sidebar-m">
   <div class="nav-sidebar-container">
