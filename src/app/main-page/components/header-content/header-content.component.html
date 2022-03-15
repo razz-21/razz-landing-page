@@ -127,25 +127,28 @@
       </div>
     </div>
     <div class="right-content">
-      <div class="swiper-container" [swiper]="config" [(index)]="index">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/images/undraw_mobile_development_re_wwsn 1.svg" alt="Mobile Development">
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/undraw_mobile_development_re_wwsn 1.svg" alt="Mobile Development">
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/undraw_mobile_development_re_wwsn 1.svg" alt="Mobile Development">
-          </div>
-        </div>
-
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+      <swiper class="header-content-swiper"
+        [spaceBetween]="30"
+        [effect]="'fade'"
+        [fadeEffect]="{ crossFade: true }"
+        [speed]="800"
+        [autoplay]="{
+          delay: 5000,
+          disableOnInteraction: false
+        }"
+        [pagination]="{ clickable: true }"
+        [keyboard]="true"
+        data-aos="zoom" data-aos-duration="1200" data-aos-delay="3400" data-aos-once="true">
+        <ng-template swiperSlide>
+          <img src="assets/images/undraw_mobile_development_re_wwsn 1.svg" alt="Mobile Development">
+        </ng-template>
+        <ng-template swiperSlide>
+          <img src="assets/images/undraw_web_developer_re_h7ie 1.svg" alt="Web Development">
+        </ng-template>
+        <ng-template swiperSlide>
+          <img src="assets/images/undraw_responsive_re_e1nn 1.svg" alt="Responsive Web">
+        </ng-template>
+      </swiper>
     </div>
   </div>
 </div>

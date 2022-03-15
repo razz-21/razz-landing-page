@@ -1,28 +1,22 @@
-import { Component, OnInit } from "@angular/core";
-import { SwiperOptions } from "swiper";
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+
+import SwiperCore, {
+  Pagination,
+  EffectFade,
+  Autoplay
+} from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Autoplay, EffectFade, Pagination]);
 
 @Component({
   selector: "app-header-content",
   templateUrl: "./header-content.component.html",
-  styleUrls: ["./header-content.component.scss"]
+  styleUrls: ["./header-content.component.scss"],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderContentComponent implements OnInit {
 
-  config: SwiperOptions = {
-    cssMode: true,
-    speed: 500,
-    autoplay: {
-      delay: 5000
-    },
-    slidesPerView: "auto",
-    fadeEffect: { crossFade: true },
-    centeredSlides: true,
-    effect: "fade",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  };
   index = 1;
 
   constructor() { }
