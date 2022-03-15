@@ -14,7 +14,15 @@ import { ProjectsComponent } from "./main-page/components/projects/projects.comp
 import { ContactMeComponent } from "./main-page/components/contact-me/contact-me.component";
 import { FooterComponent } from "./main-page/components/footer/footer.component";
 import { ScrollspyDirective } from "./shared/directives/scrollspy.directive";
-import { BackToTopComponent } from './shared/components/back-to-top/back-to-top.component';
+import { BackToTopComponent } from "./shared/components/back-to-top/back-to-top.component";
+import { SwiperModule } from "ngx-swiper-wrapper";
+import { SWIPER_CONFIG } from "ngx-swiper-wrapper";
+import { SwiperConfigInterface } from "ngx-swiper-wrapper";
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: "horizontal",
+  slidesPerView: "auto"
+};
 
 @NgModule({
   declarations: [
@@ -34,7 +42,14 @@ import { BackToTopComponent } from './shared/components/back-to-top/back-to-top.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
+  ],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
   ],
   bootstrap: [AppComponent]
 })

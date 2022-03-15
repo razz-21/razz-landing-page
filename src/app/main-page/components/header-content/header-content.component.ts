@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { SwiperOptions } from "swiper";
 
 @Component({
   selector: "app-header-content",
@@ -6,6 +7,23 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./header-content.component.scss"]
 })
 export class HeaderContentComponent implements OnInit {
+
+  config: SwiperOptions = {
+    cssMode: true,
+    speed: 500,
+    autoplay: {
+      delay: 5000
+    },
+    slidesPerView: "auto",
+    fadeEffect: { crossFade: true },
+    centeredSlides: true,
+    effect: "fade",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  };
+  index = 1;
 
   constructor() { }
 
