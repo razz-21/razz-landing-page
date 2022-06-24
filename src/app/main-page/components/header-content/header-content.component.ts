@@ -37,7 +37,7 @@ export class HeaderContentComponent implements OnInit {
   downloadCV(): void {
     const link = document.createElement("a");
     link.setAttribute("type", "hidden");
-    link.href = "../../../../assets/Ernesto Razo - CV.pdf";
+    link.href = "../../../../assets/CV - Ernesto Razo [24.06.2022].pdf";
     link.download = "Ernesto Razo - CV";
     document.body.appendChild(link);
     link.click();
