@@ -1,10 +1,10 @@
-// @mixin media-breakpoint-min($name, $breakpoints: $media-breakpoints) {
-//   $breakpoint: map-get($media-breakpoints, $name);
+@mixin media-breakpoint-min($name, $breakpoints: $media-breakpoints) {
+  $breakpoint: map-get($media-breakpoints, $name);
 
-//   @media(min-width: $breakpoint) {
-//     @content;
-//   }
-// }
+  @media(min-width: $breakpoint) {
+    @content;
+  }
+}
 
 @mixin media-breakpoint-max($name) {
   $max-breakpoints: map-get($media-breakpoints, max);
